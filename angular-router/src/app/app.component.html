@@ -1,0 +1,38 @@
+<!-- <h3>Router</h3> -->
+
+<!-- <table>
+    <tr>
+        <th>url</th>
+    </tr>
+    <tr *ngFor="let d of hdata">
+        <td>{{d.url}}</td>
+    </tr>
+</table> -->
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav my-nav-style">
+          <li class="nav-item">
+            <a routerLink='home' class="navAnchor">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink='aboutus' class="navAnchor">ABOUTUS</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink='contactus' class="navAnchor">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink='cart' class="navAnchor">CART</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,35 @@
+<!-- <p>home works!</p> -->
+<!-- <div *ngFor="let d of hdata">
+    <p>{{d.id}}</p>
+    <p>{{d.name}}</p>
+    <p>{{d.url}}</p>
+</div> -->
+
+<!-- <div class="nav">
+    <a routerLink="home">home </a>
+</div>
+<div class="nav">
+    <a routerLink="aboutus">about Us </a>
+</div>
+<div class="nav"><a routerLink="contactus">Contact Us </a></div> -->
+<!-- <div class="container" *ngFor="let d of hdata">
+    <img src="{{d.url}}">
+    <!-- <button ()>Add To Cart</button> -->
+<!-- </div> -->
+
+
+
+
+<div class="row">
+
+    <div class="col-sm-3" *ngFor="let d of hdata">
+        <div class="card" style="width: 18rem;">
+            <h3 style="text-align: center;">{{d.id}}</h3>
+            <img [src]="d.url" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align: center;">{{d.name}}</h5>
+                <button href="#" class="btn btn-primary" style="margin-left: 80px;" (click)="addToCart(d)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+</div>
